@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.devicemonitorapp.SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_initialFragment"
+            app:destination="@id/initialFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/initialFragment"
+        android:name="com.example.devicemonitorapp.InitialFragment"
+        tools:layout="@layout/fragment_initial">
+
+        <action
+            android:id="@+id/action_languageSelectionFragment_to_initialFragment"
+            app:destination="@id/initialFragment" />
+        <action
+            android:id="@+id/action_initialFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_initialFragment_to_languageSelectionFragment"
+            app:destination="@id/languageSelectionFragment" />
+
+        <action
+            android:id="@+id/action_initialFragment_to_updateSettingsFragment"
+            app:destination="@id/updateSettingsFragment" />
+        <action
+            android:id="@+id/action_initialFragment_to_faqsFragment"
+            app:destination="@id/faqsFragment" />
+        <action
+            android:id="@+id/action_initialFragment_to_xdaForumFragment"
+            app:destination="@id/xdaForumFragment" />
+        <action
+            android:id="@+id/action_initialFragment_to_supportDevelopmentFragment"
+            app:destination="@id/supportDevelopmentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.devicemonitorapp.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_CpuFragment"
+            app:destination="@id/cpuGpuFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_GpuFragment"
+            app:destination="@id/GpuFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_batteryFragment"
+            app:destination="@id/batteryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_memoryFragment"
+            app:destination="@id/memoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_storageFragment"
+            app:destination="@id/storageFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_appManagementFragment"
+            app:destination="@id/appManagementFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_networkFragment"
+            app:destination="@id/networkFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_taskAutomationFragment"
+            app:destination="@id/taskAutomationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_performanceBoosterFragment"
+            app:destination="@id/performanceBoosterFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_securityFragment"
+            app:destination="@id/securityFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_customProfilesFragment"
+            app:destination="@id/customProfilesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_refreshRateModsFragment"
+            app:destination="@id/refreshRateModsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_extraFragment"
+            app:destination="@id/extraFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cpuMemoryMonitorFragment"
+            app:destination="@id/cpuMemoryMonitorFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/languageSelectionFragment"
+        android:name="com.example.devicemonitorapp.LanguageSelectionFragment"
+        tools:layout="@layout/fragment_language_selection" />
+
+    <fragment
+        android:id="@+id/updateSettingsFragment"
+        android:name="com.example.devicemonitorapp.UpdateSettingsFragment"
+        tools:layout="@layout/fragment_update_settings" />
+
+    <fragment
+        android:id="@+id/faqsFragment"
+        android:name="com.example.devicemonitorapp.FaqsFragment"
+        tools:layout="@layout/fragment_faqs" />
+
+    <fragment
+        android:id="@+id/xdaForumFragment"
+        android:name="com.example.devicemonitorapp.XdaForumFragment"
+        tools:layout="@layout/fragment_xda_forum" />
+
+    <fragment
+        android:id="@+id/supportDevelopmentFragment"
+        android:name="com.example.devicemonitorapp.SupportDevelopmentFragment"
+        tools:layout="@layout/fragment_support_development" />
+
+    <fragment
+        android:id="@+id/cpuGpuFragment"
+        android:name="com.example.devicemonitorapp.CpuFragment"
+        tools:layout="@layout/fragment_cpu" />
+
+    <fragment
+        android:id="@+id/GpuFragment"
+        android:name="com.example.devicemonitorapp.GpuFragment"
+        tools:layout="@layout/fragment_gpu" />
+
+    <fragment
+        android:id="@+id/batteryFragment"
+        android:name="com.example.devicemonitorapp.BatteryFragment"
+        tools:layout="@layout/fragment_battery" />
+
+    <fragment
+        android:id="@+id/memoryFragment"
+        android:name="com.example.devicemonitorapp.MemoryFragment"
+        tools:layout="@layout/fragment_memory" />
+
+    <fragment
+        android:id="@+id/storageFragment"
+        android:name="com.example.devicemonitorapp.StorageFragment"
+        tools:layout="@layout/fragment_storage" />
+
+    <fragment
+        android:id="@+id/appManagementFragment"
+        android:name="com.example.devicemonitorapp.AppManagementFragment"
+        tools:layout="@layout/fragment_app_management" />
+
+    <fragment
+        android:id="@+id/networkFragment"
+        android:name="com.example.devicemonitorapp.NetworkFragment"
+        tools:layout="@layout/fragment_network" />
+
+    <fragment
+        android:id="@+id/taskAutomationFragment"
+        android:name="com.example.devicemonitorapp.TaskAutomationFragment"
+        tools:layout="@layout/fragment_task_automation" />
+
+    <fragment
+        android:id="@+id/performanceBoosterFragment"
+        android:name="com.example.devicemonitorapp.PerformanceBoosterFragment"
+        tools:layout="@layout/fragment_performance_booster" />
+
+    <fragment
+        android:id="@+id/securityFragment"
+        android:name="com.example.devicemonitorapp.SecurityFragment"
+        tools:layout="@layout/fragment_security" />
+
+    <fragment
+        android:id="@+id/customProfilesFragment"
+        android:name="com.example.devicemonitorapp.CustomProfilesFragment"
+        tools:layout="@layout/fragment_custom_profiles" />
+
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.devicemonitorapp.NotificationFragment"
+        tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/refreshRateModsFragment"
+        android:name="com.example.devicemonitorapp.RefreshRateModsFragment"
+        tools:layout="@layout/fragment_refresh_rate_mods" />
+
+    <fragment
+        android:id="@+id/extraFragment"
+        android:name="com.example.devicemonitorapp.ExtraFragment"
+        tools:layout="@layout/fragment_extra" />
+
+    <fragment
+        android:id="@+id/cpuMemoryMonitorFragment"
+        android:name="com.example.devicemonitorapp.CpuMemoryMonitorFragment"
+        tools:layout="@layout/fragment_cpu_memory_monitor" />
+</navigation>

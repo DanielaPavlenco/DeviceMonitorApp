@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Processes"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="8dp"/>
+
+        <Button
+            android:id="@+id/memoryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memory" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total CPU usage"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/totalCpuUsage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11.1%"
+            android:textColor="#ff0000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AnotherMonitor"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/anotherMonitorCpuUsage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.9%"
+            android:textColor="#ff0000"/>
+
+        <Button
+            android:id="@+id/chooseProcessButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose other process(es)"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memory"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/memoryUsage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,879,812 kB"
+            android:paddingBottom="4dp"/>
+
+        <ImageView
+            android:id="@+id/memoryGraph"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/readIntervalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read interval: 0.5s" />
+
+        <Button
+            android:id="@+id/updateIntervalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update interval: 1s" />
+
+        <Button
+            android:id="@+id/graphicIntervalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Graphic interval width: 1dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Gerätemonitor</string>
+    <string name="choose_language">Sprache wählen</string>
+    <string name="activate">Aktivieren</string>
+    <string name="english">Englisch</string>
+    <string name="spanish">Spanisch</string>
+    <string name="french">Französisch</string>
+    <string name="german">Deutsch</string>
+
+    <string name="performance_battery_management">Leistungs- und Batterieverwaltung</string>
+    <string name="cpu_gpu_monitoring">CPU-Überwachung</string>
+    <string name="gpu_monitoring">GPU-Überwachung</string>
+    <string name="battery_management">Batterieverwaltung</string>
+    <string name="memory_management">Speicherverwaltung</string>
+    <string name="storage_management">Speicherverwaltung</string>
+    <string name="app_management">Anwendungsverwaltung</string>
+    <string name="network_usage_stats">Netzwerknutzungsstatistiken</string>
+    <string name="task_automation">Aufgabenautomatisierung</string>
+    <string name="performance_booster">Leistungsbooster</string>
+    <string name="security_checks">Sicherheitsüberprüfungen</string>
+    <string name="custom_profiles">Benutzerdefinierte Profile</string>
+    <string name="notification_manager">Benachrichtigungsmanager</string>
+    <string name="refresh_rate_mods">Bildwiederholraten-Modifikationen</string>
+    <string name="extra">Extra</string>
+    <string name="cpu_memory_monitor">CPU/Speicher-Überwachung</string>
+
+    <string name="next">Weiter</string>
+
+    <string name="keep_selected_mode_psm">Ausgewählten Modus im PSM beibehalten</string>
+    <string name="default_refresh_rate_values">Standard-Bildwiederholfrequenzwerte</string>
+    <string name="per_app_settings">App-spezifische Einstellungen</string>
+    <string name="device_monitor">Gerätemonitor</string>
+    <string name="premium_activated">Premium aktiviert</string>
+    <string name="latest_version">Neueste Version</string>
+    <string name="language_selection">Sprachauswahl</string>
+    <string name="update_settings">Einstellungen aktualisieren</string>
+    <string name="faqs">FAQs</string>
+    <string name="xda_forum">XDA-Forum</string>
+    <string name="support_development">Entwicklung unterstützen</string>
+    <string name="protect_battery_mod">Batterieschutz-Mod</string>
+    <string name="maximum_charge">Maximale Ladung</string>
+    <string name="combined_bits_sec">Kombinierte Bits/Sek</string>
+    <string name="net_speed_indicator">Netzgeschwindigkeitsanzeige</string>
+    <string name="battery_image_desc">Batteriebild</string>
+    <string name="next_arrow_desc">Nächster Pfeil</string>
+    <string name="previous_arrow_desc">Vorheriger Pfeil</string>
+</resources>

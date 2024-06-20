@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ExtraFragment">
+
+    <data>
+        <!-- Declare any binding variables here -->
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/protect_battery_mod"
+                android:textSize="14sp"
+                android:textColor="?attr/textColorPrimary"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maximum_charge"
+                android:textSize="12sp"
+                android:textColor="?attr/textColorSecondary"
+                android:paddingTop="4dp" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_protect_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="@string/protect_battery_mod"
+                android:checked="false" />
+
+            <!-- Add other views similarly -->
+
+        </LinearLayout>
+    </ScrollView>
+</layout>
