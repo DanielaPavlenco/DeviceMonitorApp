@@ -31,6 +31,7 @@ class SplashFragment : Fragment() {
 
         Handler(Looper.getMainLooper()).postDelayed({
             findNavController().navigate(R.id.action_splashFragment_to_initialFragment)
+
             // Show the toolbar after navigating away from the splash screen
             (activity as? MainActivity)?.showToolbar()
         }, 3000) // Delay for 3 seconds
