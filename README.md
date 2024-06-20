@@ -25,5 +25,5 @@ Această aplicație ajută utilizatorii să monitorizeze și să gestioneze perf
 ### Clonarea depozitului
 
 ```sh
-git clone https://github.com/numele-utilizatorului/numele-proiectului.git
-cd numele-proiectului
+git clone https://github.com/DanielaPavlenco/DeviceMonitorApp.git
+cd DeviceMonitorApp
