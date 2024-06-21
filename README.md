@@ -50,9 +50,11 @@ cd DeviceMonitorApp
 ```sh
 https://github.com/topjohnwu/Magisk
 
+
 2. Deblochează bootloader-ul dispozitivului tău. Acest proces variază în funcție de producător și model, așa că asigură-te că urmezi instrucțiunile specifice dispozitivului tău.
 3. Flash-uiește fișierul Magisk.zip folosind o recuperare personalizată (de exemplu, TWRP).
 4. După ce dispozitivul este rootat, deschide Magisk Manager și asigură-te că root-ul este activ.
+
 
 ### Pe un emulator
 
@@ -64,6 +66,7 @@ https://github.com/topjohnwu/Magisk
    - Rulează `adb push /path/to/patched_boot.img /path/to/emulator` pentru a încărca imaginea de boot înserată în emulator.
    - Rulează `adb reboot bootloader` și `fastboot boot /path/to/patched_boot.img` pentru a porni emulatorul cu imaginea de boot.
 4. Deschide Magisk Manager și asigură-te că root-ul este activ.
+
 
 ## Permisiuni Speciale
 
