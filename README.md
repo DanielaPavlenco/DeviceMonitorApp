@@ -29,7 +29,7 @@ Pentru a clona depozitul de pe GitHub, deschide un terminal și rulează următo
 git clone https://github.com/DanielaPavlenco/DeviceMonitorApp.git
 cd DeviceMonitorApp
 
-### Deschiderea proiectului în Android Studio
+# **Deschiderea proiectului în Android Studio**
 
 1. Deschide Android Studio.
 2. Selectează "Open an existing Android Studio project".
