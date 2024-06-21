@@ -25,17 +25,16 @@ Această aplicație ajută utilizatorii să monitorizeze și să gestioneze perf
 
 Pentru a clona depozitul de pe GitHub, deschide un terminal și rulează următoarele comenzi:
 
-```sh
 git clone https://github.com/DanielaPavlenco/DeviceMonitorApp.git
 cd DeviceMonitorApp
 
-Deschiderea proiectului în Android Studio
+## Deschiderea proiectului în Android Studio
 
 1. Deschide Android Studio.
 2. Selectează "Open an existing Android Studio project".
 3. Navighează la locația unde ai clonat depozitul și selectează folderul proiectului.
 
-Configurarea și rularea aplicației
+## Configurarea și rularea aplicației
 
 1. Asigură-te că ai un dispozitiv fizic sau un emulator configurat în Android Studio.
 2. Dacă utilizezi un emulator, configurează-l pentru a rula Android cu API Level 33.
@@ -47,13 +46,12 @@ Obținerea accesului root cu Magisk
 
 1. Descarcă și instalează Magisk Manager din pagina oficială Magisk.
 
-```sh
 https://github.com/topjohnwu/Magisk
 
 
-2. Deblochează bootloader-ul dispozitivului tău. Acest proces variază în funcție de producător și model, așa că asigură-te că urmezi instrucțiunile specifice dispozitivului tău.
-3. Flash-uiește fișierul Magisk.zip folosind o recuperare personalizată (de exemplu, TWRP).
-4. După ce dispozitivul este rootat, deschide Magisk Manager și asigură-te că root-ul este activ.
+3. Deblochează bootloader-ul dispozitivului tău. Acest proces variază în funcție de producător și model, așa că asigură-te că urmezi instrucțiunile specifice dispozitivului tău.
+4. Flash-uiește fișierul Magisk.zip folosind o recuperare personalizată (de exemplu, TWRP).
+5. După ce dispozitivul este rootat, deschide Magisk Manager și asigură-te că root-ul este activ.
 
 
 ### Pe un emulator
