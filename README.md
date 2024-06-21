@@ -32,7 +32,9 @@ cd DeviceMonitorApp
 ## Deschiderea proiectului în Android Studio
 
 **1.** Deschide Android Studio.
+
 **2.** Selectează "Open an existing Android Studio project".
+
 **3.** Navighează la locația unde ai clonat depozitul și selectează folderul proiectului.
 
 ## Configurarea și rularea aplicației
