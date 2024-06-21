@@ -1,4 +1,4 @@
-# Android Performance Management App
+# Device Monitor App
 
 ## Descriere
 Această aplicație ajută utilizatorii să monitorizeze și să gestioneze performanța dispozitivelor lor Android, oferind statistici detaliate despre utilizarea CPU, GPU, și memorie, managementul setărilor de afișare, gestionarea aplicațiilor, optimizarea bateriei și a performanței.
