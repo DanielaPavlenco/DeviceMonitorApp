@@ -28,3 +28,46 @@ Pentru a clona depozitul de pe GitHub, deschide un terminal și rulează următo
 ```sh
 git clone https://github.com/DanielaPavlenco/DeviceMonitorApp.git
 cd DeviceMonitorApp
+
+## Deschiderea proiectului în Android Studio
+
+1. Deschide Android Studio.
+2. Selectează "Open an existing Android Studio project".
+3. Navighează la locația unde ai clonat depozitul și selectează folderul proiectului.
+
+## Configurarea și rularea aplicației
+
+1. Asigură-te că ai un dispozitiv fizic sau un emulator configurat în Android Studio.
+2. Dacă utilizezi un emulator, configurează-l pentru a rula Android cu API Level 33.
+3. Apasă pe butonul "Run" pentru a compila și rula aplicația pe dispozitivul ales.
+
+## Obținerea accesului root cu Magisk
+
+### Pe un dispozitiv real
+
+1. Descarcă și instalează Magisk Manager din pagina oficială Magisk.
+
+```sh
+https://github.com/topjohnwu/Magisk
+
+2. Deblochează bootloader-ul dispozitivului tău. Acest proces variază în funcție de producător și model, așa că asigură-te că urmezi instrucțiunile specifice dispozitivului tău.
+3. Flash-uiește fișierul Magisk.zip folosind o recuperare personalizată (de exemplu, TWRP).
+4. După ce dispozitivul este rootat, deschide Magisk Manager și asigură-te că root-ul este activ.
+
+### Pe un emulator
+
+1. Configurează un nou dispozitiv virtual (AVD) în Android Studio, asigurându-te că utilizezi API Level 33.
+2. Închide emulatorul dacă este deschis.
+3. Descarcă imaginea de boot pentru dispozitivul emulat și parchează-o folosind Magisk:
+   - Rulează `adb pull /path/to/emulator_boot.img` pentru a copia imaginea de boot de pe emulator pe PC-ul tău.
+   - Deschide Magisk Manager pe PC și înserează imaginea de boot.
+   - Rulează `adb push /path/to/patched_boot.img /path/to/emulator` pentru a încărca imaginea de boot înserată în emulator.
+   - Rulează `adb reboot bootloader` și `fastboot boot /path/to/patched_boot.img` pentru a porni emulatorul cu imaginea de boot.
+4. Deschide Magisk Manager și asigură-te că root-ul este activ.
+
+## Permisiuni Speciale
+
+Pentru a permite aplicației să modifice setările securizate ale sistemului, trebuie să rulezi următoarea comandă ADB:
+
+```sh
+adb shell pm grant com.example.devicemonitorapp android.permission.WRITE_SECURE_SETTINGS
