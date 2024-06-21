@@ -29,19 +29,19 @@ Pentru a clona depozitul de pe GitHub, deschide un terminal și rulează următo
 git clone https://github.com/DanielaPavlenco/DeviceMonitorApp.git
 cd DeviceMonitorApp
 
-# **Deschiderea proiectului în Android Studio**
+Deschiderea proiectului în Android Studio
 
 1. Deschide Android Studio.
 2. Selectează "Open an existing Android Studio project".
 3. Navighează la locația unde ai clonat depozitul și selectează folderul proiectului.
 
-### Configurarea și rularea aplicației
+Configurarea și rularea aplicației
 
 1. Asigură-te că ai un dispozitiv fizic sau un emulator configurat în Android Studio.
 2. Dacă utilizezi un emulator, configurează-l pentru a rula Android cu API Level 33.
 3. Apasă pe butonul "Run" pentru a compila și rula aplicația pe dispozitivul ales.
 
-### Obținerea accesului root cu Magisk
+Obținerea accesului root cu Magisk
 
 ### Pe un dispozitiv real
 
