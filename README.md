@@ -41,21 +41,19 @@ cd DeviceMonitorApp
 2. Dacă utilizezi un emulator, configurează-l pentru a rula Android cu API Level 33.
 3. Apasă pe butonul "Run" pentru a compila și rula aplicația pe dispozitivul ales.
 
-Obținerea accesului root cu Magisk
+### Obținerea accesului root cu Magisk
 
-### Pe un dispozitiv real
+## Pe un dispozitiv real
 
 1. Descarcă și instalează Magisk Manager din pagina oficială Magisk.
 
-https://github.com/topjohnwu/Magisk
+   https://github.com/topjohnwu/Magisk
 
+2. Deblochează bootloader-ul dispozitivului tău. Acest proces variază în funcție de producător și model, așa că asigură-te că urmezi instrucțiunile specifice dispozitivului tău.
+3. Flash-uiește fișierul Magisk.zip folosind o recuperare personalizată (de exemplu, TWRP).
+4. După ce dispozitivul este rootat, deschide Magisk Manager și asigură-te că root-ul este activ.
 
-3. Deblochează bootloader-ul dispozitivului tău. Acest proces variază în funcție de producător și model, așa că asigură-te că urmezi instrucțiunile specifice dispozitivului tău.
-4. Flash-uiește fișierul Magisk.zip folosind o recuperare personalizată (de exemplu, TWRP).
-5. După ce dispozitivul este rootat, deschide Magisk Manager și asigură-te că root-ul este activ.
-
-
-### Pe un emulator
+## Pe un emulator
 
 1. Configurează un nou dispozitiv virtual (AVD) în Android Studio, asigurându-te că utilizezi API Level 33.
 2. Închide emulatorul dacă este deschis.
@@ -63,13 +61,15 @@ https://github.com/topjohnwu/Magisk
    - Rulează `adb pull /path/to/emulator_boot.img` pentru a copia imaginea de boot de pe emulator pe PC-ul tău.
    - Deschide Magisk Manager pe PC și înserează imaginea de boot.
    - Rulează `adb push /path/to/patched_boot.img /path/to/emulator` pentru a încărca imaginea de boot înserată în emulator.
-   - Rulează `adb reboot bootloader` și `fastboot boot /path/to/patched_boot.img` pentru a porni emulatorul cu imaginea de boot.
+   - Rulează `adb reboot bootloader` și `fastboot boot /path/to/patched_boot.img` pentru a porni emulatorul cu imaginea de         boot.
 4. Deschide Magisk Manager și asigură-te că root-ul este activ.
-
 
 ## Permisiuni Speciale
 
-Pentru a permite aplicației să modifice setările securizate ale sistemului, trebuie să rulezi următoarea comandă ADB:
+Pentru a permite aplicației să modifice setările securizate ale sistemului, trebuie să rulezi următoarea comandă ADB după ce faci Run pentru a combila :
 
-```sh
 adb shell pm grant com.example.devicemonitorapp android.permission.WRITE_SECURE_SETTINGS
+
+Aceasta este o permisiune care permite aplicațiilor să modifice setările securizate ale sistemului, cum ar fi activarea sau dezactivarea funcțiilor prcum opțiunile pentru dezvoltatori, modificarea setărilor de afișare și ajustarea configurației rețelei. 
+
+** Atenție ! ** : Această permisiune este foarte restricționată, deoarece poate afecta comportamentul general și securitatea dispozitivului.
