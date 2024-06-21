@@ -40,7 +40,9 @@ cd DeviceMonitorApp
 ## Configurarea și rularea aplicației
 
 **1.** Asigură-te că ai un dispozitiv fizic sau un emulator configurat în Android Studio.
+
 **2.** Dacă utilizezi un emulator, configurează-l pentru a rula Android cu API Level 33.
+
 **3.** Apasă pe butonul "Run" pentru a compila și rula aplicația pe dispozitivul ales.
 
 ## Obținerea accesului root cu Magisk
@@ -71,11 +73,14 @@ cd DeviceMonitorApp
 
 **1.** Configurează un nou dispozitiv virtual (AVD) în Android Studio, asigurându-te că utilizezi API Level         33.
 **2.** Închide emulatorul dacă este deschis.
+
 **3.** Descarcă imaginea de boot pentru dispozitivul emulat și parchează-o folosind Magisk:
+
    - Rulează `adb pull /path/to/emulator_boot.img` pentru a copia imaginea de boot de pe emulator pe PC-ul       tău.
    - Deschide Magisk Manager pe PC și înserează imaginea de boot.
    - Rulează `adb push /path/to/patched_boot.img /path/to/emulator` pentru a încărca imaginea de boot            înserată în emulator.
    - Rulează `adb reboot bootloader` și `fastboot boot /path/to/patched_boot.img` pentru a porni emulatorul       cu imaginea de         boot.
+     
 **4.** Deschide Magisk Manager și asigură-te că root-ul este activ.
 
 ## Permisiuni Speciale
