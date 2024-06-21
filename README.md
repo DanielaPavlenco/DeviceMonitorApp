@@ -72,6 +72,7 @@ cd DeviceMonitorApp
 ### Pe un emulator
 
 **1.** Configurează un nou dispozitiv virtual (AVD) în Android Studio, asigurându-te că utilizezi API Level         33.
+
 **2.** Închide emulatorul dacă este deschis.
 
 **3.** Descarcă imaginea de boot pentru dispozitivul emulat și parchează-o folosind Magisk:
