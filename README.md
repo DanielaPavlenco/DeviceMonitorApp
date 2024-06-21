@@ -21,8 +21,9 @@ Această aplicație ajută utilizatorii să monitorizeze și să gestioneze perf
 - Magisk pentru gestionarea root-ului (recomandat pentru dispozitivele emulate)
 
 ## Instalare
-
 ### Clonarea depozitului
+
+Pentru a clona depozitul de pe GitHub, deschide un terminal și rulează următoarele comenzi:
 
 ```sh
 git clone https://github.com/DanielaPavlenco/DeviceMonitorApp.git
