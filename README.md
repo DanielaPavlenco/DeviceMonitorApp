@@ -53,16 +53,16 @@ cd DeviceMonitorApp
    https://github.com/topjohnwu/Magisk
    https://medium.com/@sarang6489/rooting-android-device-magisk-72e05793a1fb
 
-**2.** Deblochează bootloader-ul dispozitivului tău. Acest proces variază în funcție de producător și             model, așa că asigură-te că urmezi instrucțiunile specifice dispozitivului tău. De exemplu, pentru          dispozitivele Samsung, poți găsi instrucțiuni detaliate pentru a instala image.boot pe pagina lor           oficială. 
+**2.** Deblochează bootloader-ul dispozitivului tău. Acest proces variază în funcție de producător și model, așa că asigură-te că urmezi instrucțiunile specifice dispozitivului tău. De exemplu, pentru dispozitivele Samsung, poți găsi instrucțiuni detaliate pentru a instala image.boot pe pagina lor oficială. 
 
 **3.** Descarcă fișierul Magisk.zip de pe pagina oficială și copiază-l pe dispozitivul tău.
 
-**4.** Boot în modul recovery folosind combinația de taste specifică dispozitivului tău(de exemplu, Volum          jos + Power).
+**4.** Boot în modul recovery folosind combinația de taste specifică dispozitivului tău(de exemplu, Volum jos + Power).
 
 **5.** Flash-uiește fișierul Magisk.zip folosind o recuperare personalizată (de exemplu, TWRP).
       https://support.mobiledit.com/portal/en/kb/articles/how-to-flash-twrp-on-samsung-devices
       
-**6.** Selectează fișierul și confirmă flash-ul. Asigură-te că fișierul este compatibil cu modelul                telefonului tău. Pentru a descărca fișierul potrivit, poți verifica pe site-ul oficial și sa                selectezi modelul corect al dispozitivului tău.
+**6.** Selectează fișierul și confirmă flash-ul. Asigură-te că fișierul este compatibil cu modelul telefonului tău. Pentru a descărca fișierul potrivit, poți verifica pe site-ul oficial și sa selectezi modelul corect al dispozitivului tău.
       https://twrp.me/Devices/#google_vignette
       
 **7.** După finalizare, selectează "Reboot System".
@@ -71,16 +71,16 @@ cd DeviceMonitorApp
 
 ### Pe un emulator
 
-**1.** Configurează un nou dispozitiv virtual (AVD) în Android Studio, asigurându-te că utilizezi API Level         33.
+**1.** Configurează un nou dispozitiv virtual (AVD) în Android Studio, asigurându-te că utilizezi API Level 33.
 
 **2.** Închide emulatorul dacă este deschis.
 
 **3.** Descarcă imaginea de boot pentru dispozitivul emulat și parchează-o folosind Magisk:
 
-   - Rulează `adb pull /path/to/emulator_boot.img` pentru a copia imaginea de boot de pe emulator pe PC-ul       tău.
+   - Rulează `adb pull /path/to/emulator_boot.img` pentru a copia imaginea de boot de pe emulator pe PC-ul tău.
    - Deschide Magisk Manager pe PC și înserează imaginea de boot.
-   - Rulează `adb push /path/to/patched_boot.img /path/to/emulator` pentru a încărca imaginea de boot            înserată în emulator.
-   - Rulează `adb reboot bootloader` și `fastboot boot /path/to/patched_boot.img` pentru a porni emulatorul       cu imaginea de         boot.
+   - Rulează `adb push /path/to/patched_boot.img /path/to/emulator` pentru a încărca imaginea de boot înserată în emulator.
+   - Rulează `adb reboot bootloader` și `fastboot boot /path/to/patched_boot.img` pentru a porni emulatorul cu imaginea de boot.
      
 **4.** Deschide Magisk Manager și asigură-te că root-ul este activ.
 
